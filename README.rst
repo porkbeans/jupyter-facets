@@ -18,7 +18,6 @@ Import::
 
 Facets Overview::
 
-    #
     facets.overview({'train': df_train, 'test': df_test})
 
 Facets Dive::
