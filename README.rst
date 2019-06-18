@@ -25,3 +25,6 @@ Facets Dive::
 
     facets.dive(df)
 
+Example
+=======
+See `Jupyter nbviewer <https://nbviewer.jupyter.org/github/porkbeans/jupyter-facets/blob/master/examples/simple_example.ipynb>`_
