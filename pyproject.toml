@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "ipyfacets"
-version = "0.1.0"
+version = "0.1.1"
 description = "The facets project(https://github.com/PAIR-code/facets) wrapper for jupyter"
 authors = ["porkbeans <mizuo.taka@gmail.com>"]
+readme = "README.rst"
+repository = "https://github.com/porkbeans/jupyter-facets"
 
 [tool.poetry.dependencies]
 python = ">=3.6"
