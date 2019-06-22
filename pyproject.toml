@@ -4,7 +4,12 @@ version = "0.1.1"
 description = "The facets project(https://github.com/PAIR-code/facets) wrapper for jupyter"
 authors = ["porkbeans <mizuo.taka@gmail.com>"]
 readme = "README.rst"
+homepage = "https://github.com/porkbeans/jupyter-facets"
 repository = "https://github.com/porkbeans/jupyter-facets"
+classifiers = [
+	"Framework :: Jupyter",
+	"Topic :: Scientific/Engineering :: Visualization",
+]
 
 [tool.poetry.dependencies]
 python = ">=3.6"
