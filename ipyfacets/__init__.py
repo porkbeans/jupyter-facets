@@ -43,9 +43,12 @@ def dive(data: pandas.DataFrame) -> HTML:
     return HTML(FACETS_DIVE_TEMPLATE.format(elem_id=elem_id, json_str=json_str))
 
 
-def overview(tables: typing.Mapping[str, pandas.DataFrame]) -> HTML:
+def overview(tables: typing.Union[pandas.DataFrame, typing.Mapping[str, pandas.DataFrame]]) -> HTML:
     # Element ID MUST be unique
     elem_id = _generate_element_id()
+
+    if isinstance(tables, pandas.DataFrame):
+        tables = {"default": tables}
 
     table_list = []
     for name, table in tables.items():
