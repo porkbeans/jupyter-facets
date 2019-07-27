@@ -1,4 +1,4 @@
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 __all__ = ["dive", "overview"]
 
 import base64
@@ -10,11 +10,11 @@ import numpy
 import pandas
 from IPython.core.display import HTML
 
-from .overview.generic_feature_statistics_generator import GenericFeatureStatisticsGenerator
+from facets_overview.generic_feature_statistics_generator import GenericFeatureStatisticsGenerator
 
 FACETS_DIVE_TEMPLATE = """
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.js"></script>
-    <link rel="import" href="https://raw.githubusercontent.com/PAIR-code/facets/master/facets-dist/facets-jupyter.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.3.3/webcomponents-lite.js"></script>
+    <link rel="import" href="https://raw.githubusercontent.com/PAIR-code/facets/1.0.0/facets-dist/facets-jupyter.html">
     <facets-dive id="{elem_id}" height="600"></facets-dive>
     <script>
       var data = {json_str};
@@ -23,8 +23,8 @@ FACETS_DIVE_TEMPLATE = """
 """
 
 FACETS_OVERVIEW_TEMPLATE = """
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.js"></script>
-    <link rel="import" href="https://raw.githubusercontent.com/PAIR-code/facets/master/facets-dist/facets-jupyter.html">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.3.3/webcomponents-lite.js"></script>
+    <link rel="import" href="https://raw.githubusercontent.com/PAIR-code/facets/1.0.0/facets-dist/facets-jupyter.html">
     <facets-overview id="{elem_id}"></facets-overview>
     <script>
       document.querySelector("#{elem_id}").protoInput = "{proto_str}";
