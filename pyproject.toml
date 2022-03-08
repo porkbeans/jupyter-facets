@@ -20,7 +20,7 @@ facets-overview = "^1.0"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"
-jupyterlab = "^1.0"
+jupyterlab = "^1.2"
 openml = "^0.9.0"
 
 [build-system]
