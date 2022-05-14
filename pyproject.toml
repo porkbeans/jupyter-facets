@@ -1,27 +1,27 @@
 [tool.poetry]
 name = "ipyfacets"
-version = "0.2.0"
+version = "0.3.0"
 description = "The facets project(https://github.com/PAIR-code/facets) wrapper for jupyter"
 authors = ["porkbeans <mizuo.taka@gmail.com>"]
 readme = "README.rst"
 homepage = "https://github.com/porkbeans/jupyter-facets"
 repository = "https://github.com/porkbeans/jupyter-facets"
 classifiers = [
-	"Framework :: Jupyter",
-	"Topic :: Scientific/Engineering :: Visualization",
+    "Framework :: Jupyter",
+    "Topic :: Scientific/Engineering :: Visualization",
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.6"
-pandas = "^0.24.2"
-numpy = "^1.16"
-ipython = "^7.5"
+python = "^3.8,<3.11"
+pandas = "^1.4"
+numpy = "^1.22"
+ipython = "^8.3"
 facets-overview = "^1.0"
 
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"
-jupyterlab = "^1.0"
-openml = "^0.9.0"
+jupyterlab = "^3.4"
+openml = "^0.12"
 
 [build-system]
 requires = ["poetry>=0.12"]
